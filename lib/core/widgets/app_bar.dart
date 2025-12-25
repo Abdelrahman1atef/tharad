@@ -1,4 +1,3 @@
-import 'package:tharad/core/widgets/app_Image.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -27,17 +26,17 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       scrolledUnderElevation: 0,
       automaticallyImplyLeading: false,
       leadingWidth: 50,
-      leading: Navigator.canPop(context)
-          ? Padding(
-            padding: const EdgeInsetsGeometry.symmetric(horizontal: 10),
-            child: CircleAvatar(
-            maxRadius: 20,
-            backgroundColor: Theme.of(context).hintColor.withValues(
-              alpha: 0.3
-            ),
-            child: const AppImage(image: "arrow_back.svg")),
-          )
-          : null,
+      // leading: Navigator.canPop(context)
+      //     ? Padding(
+      //       padding: const EdgeInsetsGeometry.symmetric(horizontal: 10),
+      //       child: CircleAvatar(
+      //       maxRadius: 20,
+      //       backgroundColor: Theme.of(context).hintColor.withValues(
+      //         alpha: 0.3
+      //       ),
+      //       child: const AppImage(image: "arrow_back.svg")),
+      //     )
+      //     : null,
       centerTitle: true,
       title: haveTitle
           ? Text(
@@ -71,10 +70,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     hintStyle: WidgetStatePropertyAll(
                       Theme.of(context).textTheme.titleSmall,
                     ),
-                    trailing: const [AppImage(image: "search.svg")],
-                    textStyle: WidgetStatePropertyAll(
-                      Theme.of(context).textTheme.displayMedium,
-                    ),
+                    // trailing: const [AppImage(image: "search.svg")],
+                    // textStyle: WidgetStatePropertyAll(
+                    //   Theme.of(context).textTheme.displayMedium,
+                    // ),
                   ),
                 ),
               ),

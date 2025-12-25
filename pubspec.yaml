@@ -31,15 +31,16 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
+  vector_graphics: any
   json_annotation:
   freezed_annotation:
   flutter_bloc:
   flutter_svg:
   flutter_screenutil:
-  pin_code_fields:
-  vector_graphics: any
   dio:
   pretty_dio_logger:
+  pin_code_fields:
+  dotted_border:
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -58,6 +59,20 @@ flutter:
     - assets/images/
     - assets/icons/
   fonts:
+    - family: Alexandria
+      fonts:
+        - asset: assets/fonts/Alexandria.ttf
     - family: Tajawal
       fonts:
-        - asset: assets/fonts/Tajawal-Medium.ttf
+        - asset: assets/fonts/tajawal/Tajawal-Light.ttf
+          weight: 300
+        - asset: assets/fonts/tajawal/Tajawal-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/tajawal/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/tajawal/Tajawal-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/tajawal/Tajawal-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/tajawal/Tajawal-Black.ttf
+          weight: 900

@@ -47,7 +47,7 @@ class CustomCard extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadiusGeometry.circular(8),
                     ),
-                    child: const AppImage(image: "add_to_cart.svg")
+                    // child: const AppImage(image: "add_to_cart.svg")
                   ),
                 ),
               ],
