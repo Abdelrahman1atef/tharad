@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tharad/core/widgets/app_Image.dart';
 import 'package:tharad/core/widgets/app_button.dart';
 import 'package:tharad/core/widgets/app_text.dart';
+import 'package:tharad/views/login.dart';
 
 import '../core/widgets/app_add_image.dart';
 import '../core/widgets/app_input_text.dart';
@@ -126,16 +127,19 @@ class ProfileView extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 20),
-                AppText(
-                  "تسجيل الخروج",
-                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                    fontSize: 16,
-                    color: Theme.of(context).colorScheme.error,
-                    fontWeight: FontWeight.w600,
-                    decoration: TextDecoration.underline,
-                    decorationColor: Theme.of(context).primaryColor,
-                    decorationStyle: TextDecorationStyle.solid,
-                    decorationThickness: 2,
+                GestureDetector(
+                  onTap: () => Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => LoginView(),),(route) => false,),
+                  child: AppText(
+                    "تسجيل الخروج",
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                      fontSize: 16,
+                      color: Theme.of(context).colorScheme.error,
+                      fontWeight: FontWeight.w600,
+                      decoration: TextDecoration.underline,
+                      decorationColor: Theme.of(context).primaryColor,
+                      decorationStyle: TextDecorationStyle.solid,
+                      decorationThickness: 2,
+                    ),
                   ),
                 ),
               ],
